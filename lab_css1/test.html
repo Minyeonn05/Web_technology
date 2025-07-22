@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+            background-color: lightblue;
+            color: navy;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .button1 {
+            padding: 10px 20px;
+            background-color: aliceblue;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            background-color: red;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aquamarine;
+        }
+
+        .center-container > .center-box {
+            padding: 20px;
+            background-color: red;
+            border: #000;
+        }
+
+        .grid-center {
+            display:grid;
+            place-items: center;
+            height: 100vh;
+            background-color: azure;
+        }
+
+        .grid-center > .center-box {
+            padding: 20px;
+            background-color: red;
+            border: #000;
+        } 
+        
+        .container-center {
+            position: relative;
+            background-color: bisque;
+            height: 100vh;
+        }
+
+        .absolute-item{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            background-color: red;
+            padding: 20px;
+            border: solid 1px #000;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <div class="center-container">
+        <div class="center-box">flex center</div>
+    </div>
+
+    <div class="grid-center">
+        <div class="center-box">grid center</div>
+    </div>
+
+    <div class="container-center">
+        <div class="absolute-item">ABS</div>
+    </div>
+
+    <button class="button1">click</button>
+
+    
+    <p style="color: red; font-size: 20px;">ทดสอบการแสดงข้อความภาษาไทย</p>
+
+    <div class="box">
+        BOX
+    </div>
+
+    <div class="row">
+        <div class="box2 red">Red</div>
+        <div class="box2 green">Green</div>
+        <div class="box2 blue">Blue</div>
+    </div>
+
+
+</body>
+</html>
